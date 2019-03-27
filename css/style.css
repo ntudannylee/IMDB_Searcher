@@ -1,6 +1,15 @@
-  @media( min-width:960px) {
+  @media( min-width:700px) {
       #movies .col-md-3 .img {
           height: 400px;
+      }
+      .searchbar:hover>.search_input {
+          width: 145px;
+          caret-color: white;
+          transition: width 0.4s linear;
+      }
+      body,
+      html {
+          background-size: 331px 635px;
       }
   }
   
@@ -18,7 +27,7 @@
       margin-bottom: auto;
       margin-top: auto;
       border-radius: 30px;
-      background-color: red;
+      background-color: #0066FF;
       padding: 10px;
   }
   
@@ -46,7 +55,7 @@
   .searchbar:hover>.search_input {
       padding: 0 10px;
       width: 450px;
-      caret-color: red;
+      caret-color: white;
       transition: width 0.4s linear;
   }
   
@@ -62,10 +71,24 @@
   
   #movies .col-md-3 img {
       height: 400px;
+      width: 300px;
   }
   
   h4 {
       color: white;
       font-weight: bold;
       background-color: black;
+  }
+  
+  #movies_background {
+      background-color: black;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+  
+  button {
+      padding: 0;
+      border: none;
+      background: none;
   }

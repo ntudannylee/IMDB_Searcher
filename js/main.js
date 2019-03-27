@@ -27,11 +27,20 @@ function get_movies(search_text) {
 
             $('#movies').html(output);
 
+            var scrollToElement = function(el, ms) {
+                var speed = (ms) ? ms : 600;
+                $('html,body').animate({
+                    scrollTop: $(el).offset().top
+                }, speed);
+            }
+            scrollToElement('#movies_background', 600);
+
         })
         .catch((err) => {
             console.log(err);
         });
 }
+
 
 function movie_selected(id) {
     sessionStorage.setItem('movieId', id);
