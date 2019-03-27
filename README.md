@@ -9,3 +9,4 @@ The page at '<URL>' was loaded over HTTPS, but requested an insecure XMLHttpRequ
 [SOLUTION]
 
 Download the full desktop and click index.html to get started!
+or click this: http://homepage.ntu.edu.tw/~b04106024/imdb_searcher/index.html
