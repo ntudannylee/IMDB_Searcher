@@ -1,15 +1,19 @@
-  @media( min-width:700px) {
+  @media screen and (max-width: 600px) {
       #movies .col-md-3 .img {
           height: 400px;
-      }
-      .searchbar:hover>.search_input {
-          width: 145px;
-          caret-color: white;
-          transition: width 0.4s linear;
       }
       body,
       html {
           background-size: 331px 635px;
+      }
+      .searchbar,
+      .search_input:focus {
+          color: black;
+          border: 0;
+          outline: 0;
+          background: none;
+          line-height: 40px;
+          width: 200px;
       }
   }
   
@@ -27,12 +31,12 @@
       margin-bottom: auto;
       margin-top: auto;
       border-radius: 30px;
-      background-color: #0066FF;
+      background-color: white;
       padding: 10px;
   }
   
   .search_input {
-      color: white;
+      color: black;
       border: 0;
       outline: 0;
       background: none;
@@ -49,19 +53,25 @@
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-      color: white;
+      color: #FFAA33;
   }
   
   .searchbar:hover>.search_input {
       padding: 0 10px;
       width: 450px;
-      caret-color: white;
+      caret-color: black;
       transition: width 0.4s linear;
   }
   
   .searchbar:hover>.search_icon {
-      background-color: white;
+      background-color: #FFAA33;
       color: black;
+  }
+  
+  .search_input:focus {
+      padding: 0 10px;
+      width: 450px;
+      caret-color: black;
   }
   
   #movies img,
